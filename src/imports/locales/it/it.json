@@ -1,0 +1,11 @@
+{
+    "calculate_hash": "Calcola hash di un file in SHA256",
+    "import_file": "Importa file",
+    "calculate_new_hash": "Calcola un altro hash",
+    "or": "Oppure",
+    "dragAndDrop": "Trascina un file",
+    "hash": "Hash",
+    "file_name": "Nome file",
+
+    "footer_version": "Versione: "
+}
