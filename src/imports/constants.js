@@ -2,7 +2,7 @@ export const colors = {
     primary: "#38A7B8",
     secondary: "#FFFFFF",
     transparentSecondary: "rgba(255, 255, 255, 30)",
-    lightPrimary: "#57BCCC",
+    lightPrimary: "#1e679c",
     transparentPrimary: "rgba(56, 167, 184, 60)",
     lightGrey: "#EDF5F6",
     transparentLightGrey: "rgba(237, 245, 246, 65)",

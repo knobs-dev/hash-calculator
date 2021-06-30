@@ -67,7 +67,7 @@ function Home(props) {
                         window.open("https://bcode.cloud");
                     }}
                 >
-                    BCode
+                    Pablock
                 </Text>
                 {theme === "light" ? (
                     <MoonIcon
