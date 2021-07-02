@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  hash-calculator-prod:
+    container_name: hash-calculator-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      args: 
+        - APP_TITLE=${APP_TITLE}
+    ports:
+      - '${PORT}:80'

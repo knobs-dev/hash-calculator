@@ -64,3 +64,14 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Build folder
+build
+
+# Customization files
+customization/theme.js
+customization/favicon.ico
+customization/logo192.png
+customization/logo512.png
+customization/manifest.json
+index.html.bak

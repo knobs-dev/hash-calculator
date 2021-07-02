@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  hash-calculator-dev:
+    container_name: hash-calculator-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        - APP_TITLE=${APP_TITLE}
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
