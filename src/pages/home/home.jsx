@@ -19,10 +19,13 @@ import { usePlatformDetector } from "../../imports/utils";
 // versioning
 import { VERSION } from "../../imports/config";
 
-let url = "/images/logo-bcode-bianco.png",
-    link = "https://bcode.cloud",
-    heightPowered = "40px",
-    marginPowered = "10px";
+const url =
+    "https://knobs.it/wp-content/uploads/2020/02/cropped-KNOBS_payoff_negativo-e1582238859605-3.png";
+const link = "https://knobs.it";
+const companyName = process.env["REACT_APP_COMPANY_NAME"];
+
+const heightPowered = "40px";
+const marginPowered = "10px";
 
 function Home(props) {
     const { theme, changeTheme } = props;
@@ -37,7 +40,7 @@ function Home(props) {
     const loadFile = async file => {
         let reader = new FileReader();
 
-        reader.onload = function(event) {
+        reader.onload = function (event) {
             const wordArray = CryptoJS.lib.WordArray.create(
                 event.target.result,
             );
@@ -63,11 +66,9 @@ function Home(props) {
                 <Text
                     color={`${theme}.logo`}
                     className={"title"}
-                    onClick={() => {
-                        window.open("https://bcode.cloud");
-                    }}
+                    onClick={() => window.open(url)}
                 >
-                    BCode
+                    {companyName}
                 </Text>
                 {theme === "light" ? (
                     <MoonIcon
